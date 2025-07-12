@@ -1,0 +1,13 @@
+/* Creando las variables del proyecto.
+Estás deben ser definidas por su función más no por su valor */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --background-color: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --main-color: #ACD9B2;
+}
+body {
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
