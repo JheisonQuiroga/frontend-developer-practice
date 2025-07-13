@@ -6,8 +6,49 @@ Estás deben ser definidas por su función más no por su valor */
     --background-color: #C7C7C7;
     --text-input-field: #F7F7F7;
     --main-color: #ACD9B2;
+
+    /* Font */
+    --font-quicksand-family: 'Quicksand', sans-serif;
+
+    /* Weights */
+    --font-quicksand-300: 300;
+    --font-quicksand-400: 400;
+    --font-quicksand-500: 500;
+    --font-quicksand-600: 600;
+    --font-quicksand-700: 700;
 }
+
+.quicksand {
+    font-family: var(--font-quicksand-family);
+}
+
+.quicksand-300 {
+    font-weight: var(--font-quicksand-300);
+}
+.quicksand-400 {
+    font-weight: var(--font-quicksand-400);
+}
+.quicksand-500 {
+    font-weight: var(--font-quicksand-500);
+}
+.quicksand-600 {
+    font-weight: var(--font-quicksand-600);
+}
+.quicksand-700 {
+    font-weight: var(--font-quicksand-700);
+}
+
+
 body {
     font-family: 'Quicksand';
-    font-weight: 300;
+    /* font-weight: 300; */
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    display: block;
 }

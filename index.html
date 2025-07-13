@@ -6,11 +6,30 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <h1>Titulo</h1>
-    <p>Este es un parrafo.</p>
+    <main class="main">
+        <section>
+            <img src="" alt="">
+        </section>
+
+        <section>
+            <h1 class="quicksand">Create a new password</h1>
+            <p class="quicksand">Enter a new password for your account.</p>
+        </section>
+
+        <section class="form-container">
+            <form action="" class="form">
+                <label for="password" class="label">Password</label>
+                <input type="password" placeholder="*********" id="password" class="input input-password" required>
+                <label for="re-password">Password</label>
+                <input type="password" placeholder="*********" id="re-password" class="input input-password" required>
+                <input type="submit" value="Confirm" class="primary-button">
+            </form>
+        </section>
+
+    </main>
 </body>
 </html>
