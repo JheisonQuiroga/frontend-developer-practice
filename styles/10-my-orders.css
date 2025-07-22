@@ -1,0 +1,119 @@
+/* 1. Creando las variables del proyecto.
+Estás deben ser definidas por su función más no por su valor 
+
+2. Asignación de estilos:
+Los estilos se ordenan según su propósito.
+- Posicionamiento
+- Box Model
+- Tipografía
+- Visuales
+- Otros
+Cada categoria se separa por un espacio, de forma que resulta más legible.
+*/
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --background-color: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --main-color: #ACD9B2;
+
+    /* Font */
+    --font-quicksand-family: 'Quicksand', sans-serif;
+
+    /* Weights */
+    --font-quicksand-300: 300;
+    --font-quicksand-400: 400;
+    --font-quicksand-500: 500;
+    --font-quicksand-600: 600;
+    --font-quicksand-700: 700;
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+.quicksand {
+    font-family: var(--font-quicksand-family);
+}
+
+.quicksand-300 {
+    font-weight: var(--font-quicksand-300);
+}
+.quicksand-400 {
+    font-weight: var(--font-quicksand-400);
+}
+.quicksand-500 {
+    font-weight: var(--font-quicksand-500);
+}
+.quicksand-600 {
+    font-weight: var(--font-quicksand-600);
+}
+.quicksand-700 {
+    font-weight: var(--font-quicksand-700);
+}
+
+body {
+    font-family: 'Quicksand';
+    margin: 0;
+
+    background-image: url("../assets/images/16324335_rm222-mind-19.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-size: cover; */
+    /* object-fit: cover; */
+}
+.my-order {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* box-sizing: border-box; */
+}
+.my-order-container {
+    max-width: 400px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.title {
+    align-self: flex-start;
+    justify-self: flex-end;
+    font-size: var(--lg);
+    font-weight: var(--font-quicksand-600);
+    color: var(--black);
+    margin: 20px 0;
+}
+.my-order-content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.my-order-content div:nth-child(2) {
+    justify-self: end;
+    margin-right: 10px;
+}
+.my-order-content p {
+    font-family: var(--font-quicksand-family);
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--black);
+    margin: 0;
+}
